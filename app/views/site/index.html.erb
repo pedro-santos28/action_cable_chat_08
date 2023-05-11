@@ -1,6 +1,8 @@
 <div class="chat" data-controller="chat">
-  <div data-chat-target="messages"></div>
+  <div class="chat-messages" data-chat-target="messages"></div>
 
-  <input type="text" data-chat-target="input" />
-  <input type="submit" data-action="click->chat#submit" />
+  <div class="chat-actionbar">
+    <input type="text" class="chat-input" data-chat-target="input" />
+    <input type="submit" class="button" data-action="click->chat#submit" />
+  </div>
 </div>

@@ -11,13 +11,17 @@ export default class extends Controller {
       received(data) {
         const html = channel.createMessageHTML(data)
         channel.messagesTarget.insertAdjacentHTML("beforeend", html)
-        channel.inputTarget.valut = ""
+        channel.inputTarget.value = ""
       }
     })
   }
 
   createMessageHTML(data) {
-    return `<div>${data["sender"]}: ${data["body"]}</div>`
+    return `
+      <div class="chat-message">
+        <span class="chat-message-sender">${data["sender"]}:</span> ${data["body"]}
+      </div>
+    `;
   }
 
   submit() {

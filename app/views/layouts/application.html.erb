@@ -11,15 +11,39 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <% if signed_in? %>
-      <%= button_to "Log out", destroy_user_session_path, method: :delete %>
-      <%= current_user.email %>
-    <% else %>
-      <%= link_to "Log in", new_user_session_path %>
+    <body class="container mx-auto">
+    <!-- component -->
+    <header class="header flex items-center justify-between px-8 py-2 border-b mb-4">
+      <!-- logo -->
+      <h1 class="w-3/12">
+        <%= link_to root_path do %>
+          <%= image_tag "logo.png", size: "48x48" %>
+        <% end %>
+      </h1>
+
+      <!-- navigation -->
+      <nav class="nav">
+        <ul class="flex items-center">
+          <% if signed_in? %>
+            <li class="p-4 text-slate-300">
+              <%= current_user.email %>
+            </li>
+            <li class="p-4 cursor-pointer">
+              <%= button_to "Log out", destroy_user_session_path, class: "button", method: :delete %>
+            </li>
+          <% else %>
+            <li class="p-4 cursor-pointer">
+              <%= link_to "Log in", new_user_session_path, class: "button" %>
+            </li>
+          <% end %>
+        </ul>
+      </nav>
+    </header>
+    <% if notice %>
+      <p class="notice"><%= notice %></p>
+    <% elsif alert %>
+      <p class="alert"><%= alert %></p>
     <% end %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+    <div class="h-screen"><%= yield %></div>
   </body>
 </html>

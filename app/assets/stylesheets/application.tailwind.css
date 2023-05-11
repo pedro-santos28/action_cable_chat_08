@@ -11,3 +11,31 @@
 }
 
 */
+
+.notice {
+  @apply bg-blue-100 rounded-lg py-5 px-6 mb-4 text-sm text-blue-700;
+}
+
+.alert {
+  @apply bg-purple-100 rounded-lg py-5 px-6 mb-4 text-sm text-purple-700;
+}
+
+.chat {
+  @apply relative w-full my-8 p-8 border h-4/5;
+}
+
+.chat-message-sender {
+  @apply text-slate-400;
+}
+
+.chat-actionbar {
+  @apply absolute inset-x-8 bottom-8 flex;
+}
+
+.chat-input {
+  @apply border-slate-300 w-full mr-4;
+}
+
+.button {
+  @apply bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded;
+}
