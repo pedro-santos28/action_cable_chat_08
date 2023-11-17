@@ -31,3 +31,21 @@
 
 en:
   hello: "Hello world"
+
+  site:
+    index:
+      title: "Chat application"
+      login-required: "You must be logged in to access the chat"
+
+  layouts:
+    application:
+      logout: "Log out" 
+      save: "Save"
+      app_language: "Application language"
+    
+  languages:
+    create:
+      logout: "Logout" 
+      login: "Login"
+      save: "Save"
+      app_language: "Application language"

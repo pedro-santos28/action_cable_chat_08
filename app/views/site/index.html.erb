@@ -1,8 +1,16 @@
+<h1><%= translate(".title")%></h1>
+ <% if signed_in? %>
 <div class="chat" data-controller="chat">
   <div class="chat-messages" data-chat-target="messages"></div>
 
   <div class="chat-actionbar">
     <input type="text" class="chat-input" data-chat-target="input" />
-    <input type="submit" class="button" data-action="click->chat#submit" />
+    <input type="submit" class="button" data-action="click->chat#submit">
+    </input>
   </div>
 </div>
+<% else %>
+
+  <h1><%= t(".login-required")%></h1>
+
+<% end%>

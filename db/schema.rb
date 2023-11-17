@@ -10,7 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_10_152431) do
+ActiveRecord::Schema[7.0].define(version: 2023_11_17_130426) do
+  create_table "currents", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "languages", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "abbreviation"
+  end
+
   create_table "messages", force: :cascade do |t|
     t.string "body"
     t.integer "user_id", null: false

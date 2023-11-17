@@ -1,0 +1,32 @@
+pt-BR:
+    
+  helpers:
+    label:
+      user:
+        email: "Endereço de email"
+        password: "Senha"
+      submit:
+        create: "Send it!"
+
+  site:
+    index:
+      title: "Aplicação de chat"
+      send: "Enviar"
+      login-required: "Vou deve estar logado para acessar o chat."
+  
+  layouts:
+    application:
+      logout: "Sair" 
+      login: "Entrar"
+      save: "Salvar"
+      app_language: "Linguagem da aplicação"
+    
+  languages:
+    create:
+      logout: "Sair" 
+      login: "Entrar"
+      save: "Salvar"
+      app_language: "Linguagem da aplicação"
+
+
+  

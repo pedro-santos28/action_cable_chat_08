@@ -73,6 +73,8 @@ end
 
 gem "devise", "~> 4.9"
 
+gem 'devise-i18n'
+
 gem "tailwindcss-rails", "~> 2.0"
 
 gem "devise-tailwindcssed", "~> 0.1.5"
