@@ -28,5 +28,11 @@ pt-BR:
       save: "Salvar"
       app_language: "Linguagem da aplicação"
 
+  devise: 
+    registrations:
+      new:
+        characters_minimum: "caracteres mínimos"
+
+
 
   
