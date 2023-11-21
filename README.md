@@ -23,3 +23,4 @@ Things you may want to cover:
 
 * ...
 # action_cable_chat
+# action_cable_chat_08
